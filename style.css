@@ -137,3 +137,34 @@ display: inline-block;
     background-color: rgba(255,240,240,0.5);
     border-radius: 12px;
 }
+
+#gift-container {
+    margin-top: 15px;
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.gift-text {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.spotify-gift img {
+    width: 80px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.spotify-gift img:hover {
+    transform: scale(1.15) rotate(-3deg);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
